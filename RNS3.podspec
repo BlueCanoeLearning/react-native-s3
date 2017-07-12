@@ -13,9 +13,12 @@ Pod::Spec.new do |s|
   s.default_subspec     = 'Core'
   s.requires_arc        = true
   s.platform            = :ios, "9.0"
-  
+
   s.dependency 'React/Core'
-  
+  s.dependency 'AWSCognitoIdentityProvider'
+  s.dependency 'AWSCognito'
+  s.dependency 'AWSS3'
+
   s.subspec 'Core' do |ss|
     ss.source_files     = "ios/*.{h,m,swift}"
   end
